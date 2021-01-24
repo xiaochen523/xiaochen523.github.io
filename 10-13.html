@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		body{
+			width: 390px;
+			text-align: center;
+		}
+		#outter1,#outter2{/*使用并集选择器同时设置两个包层DIV的公共样式*/
+			height: 60px;
+			margin-top: 15px;
+			background: #900;
+			}
+		#inner1{
+			margin-top: 30px;
+			background: #eee;
+		}
+		#outter2{
+			padding-top: 1px;
+		}
+		#inner2{
+			margin-top: 30px;
+			background: #eee;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="outter1"><div id="inner1">内层div，与外层div发生外边距合并</div></div>
+	<div id="outter2"><div id="inner2">内存div，没有发生外边距合并</div></div>
+</body>
+</html>
