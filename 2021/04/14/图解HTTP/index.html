@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客新篇, 逍尘君的博客">
+    <meta name="keywords" content="图解HTTP, 逍尘君的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客新篇 | 逍尘君的博客</title>
+    <title>图解HTTP | 逍尘君的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">博客新篇</h1>
+                    <h1 class="description center-align post-title">图解HTTP</h1>
                 </div>
             </div>
         </div>
@@ -459,10 +459,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li>今天开始复习web，在接下来的几天时间里，我将创建一个类似于网站的n个页面，其总体 规划为放置图片的页面，前期将用于私人存储系统 </li>
-</ul>
-<h1 id="现在开始"><a href="#现在开始" class="headerlink" title="现在开始"></a>现在开始</h1>
+                <h1 id="图解HTTP"><a href="#图解HTTP" class="headerlink" title="图解HTTP"></a>图解HTTP</h1><p><strong>补充一个知识点：安全套接字层超文本传输协议HTTPS</strong></p>
+<h3 id="HTTPS-HTTP-SSL"><a href="#HTTPS-HTTP-SSL" class="headerlink" title="HTTPS=HTTP+SSL"></a>HTTPS=HTTP+SSL</h3><h5 id="注释：SSL（Secure-Sockets-Layer）"><a href="#注释：SSL（Secure-Sockets-Layer）" class="headerlink" title="注释：SSL（Secure Sockets Layer）"></a>注释：SSL（Secure Sockets Layer）</h5><h5 id="HTTPS协议是由SSL-HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。"><a href="#HTTPS协议是由SSL-HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。" class="headerlink" title="HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。"></a>HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。</h5><h4 id="HTTPS和HTTP的区别主要如下："><a href="#HTTPS和HTTP的区别主要如下：" class="headerlink" title="HTTPS和HTTP的区别主要如下："></a>HTTPS和HTTP的区别主要如下：</h4><h5 id="1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。"><a href="#1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。" class="headerlink" title="1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。"></a>1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。</h5><h5 id="2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。"><a href="#2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。" class="headerlink" title="2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。"></a>2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。</h5><h5 id="3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。"><a href="#3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。" class="headerlink" title="3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。"></a>3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。</h5><h5 id="4、http的连接很简单，是无状态的；HTTPS协议是由SSL-HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。"><a href="#4、http的连接很简单，是无状态的；HTTPS协议是由SSL-HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。" class="headerlink" title="4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。"></a>4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。</h5><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sueyyyy/p/12012570.html">详情请访问原作者</a></p>
+<h3 id="第一章-了解web与网络基础"><a href="#第一章-了解web与网络基础" class="headerlink" title="第一章  了解web与网络基础"></a>第一章  了解web与网络基础</h3><h4 id="web浏览器通过URL获取服务器资源，然后服务器通过HTTP协议通信将信息传输到浏览器上从而呈现出信息页面"><a href="#web浏览器通过URL获取服务器资源，然后服务器通过HTTP协议通信将信息传输到浏览器上从而呈现出信息页面" class="headerlink" title="web浏览器通过URL获取服务器资源，然后服务器通过HTTP协议通信将信息传输到浏览器上从而呈现出信息页面"></a>web浏览器通过URL获取服务器资源，然后服务器通过HTTP协议通信将信息传输到浏览器上从而呈现出信息页面</h4><p>##三项WWW构建技术<br>1.把SGML（Standard Generalized Markup Language,标准通用标记语言）作为页面的文本标记语言的HTML（HyperText Markup Language,超文本标记语言）；<br>2.作为文档传输协议的HTTP；<br>3.指定文档所在地址的URL（Uniform Resource Locator,统一资源定位符）。</p>
+<h4 id="URI-统一资源标识符"><a href="#URI-统一资源标识符" class="headerlink" title="URI 统一资源标识符"></a>URI 统一资源标识符</h4><h5 id="绝对URL格式"><a href="#绝对URL格式" class="headerlink" title="绝对URL格式"></a>绝对URL格式</h5><h3 id="协议方案名-：-登录信息（认证）-服务器地址-服务器端口号-带层次的文件路径-查询字符（可选）-片段标识符（可选）"><a href="#协议方案名-：-登录信息（认证）-服务器地址-服务器端口号-带层次的文件路径-查询字符（可选）-片段标识符（可选）" class="headerlink" title="协议方案名+：+登录信息（认证）+服务器地址+服务器端口号+带层次的文件路径+查询字符（可选）+片段标识符（可选）"></a>协议方案名+：+登录信息（认证）+服务器地址+服务器端口号+带层次的文件路径+查询字符（可选）+片段标识符（可选）</h3><h4 id="例如：（http-）-user-pass-www-example-jp-80-dir-index-htm-uid-1-ch1-已用括号将各部分分开"><a href="#例如：（http-）-user-pass-www-example-jp-80-dir-index-htm-uid-1-ch1-已用括号将各部分分开" class="headerlink" title="例如：（http://）(user:pass)@(www.example.jp):(80)/(dir/index.htm)?(uid=1)#(ch1)  // 已用括号将各部分分开"></a>例如：（http://）(user:pass)@(<a href="http://www.example.jp):(80)/(dir/index.htm)?(uid=1)#(ch1)">www.example.jp):(80)/(dir/index.htm)?(uid=1)#(ch1)</a>  // 已用括号将各部分分开</h4><h3 id="第二章-简单的HTTP协议"><a href="#第二章-简单的HTTP协议" class="headerlink" title="第二章 简单的HTTP协议"></a>第二章 简单的HTTP协议</h3><p>（1） 应用HTTP时，必须存在客户端和服务器</p>
+<h4 id="响应报文基本上由协议版本，状态码（表示请求成功或失败的数字代码），用以解释状态码的原因短语，可选的响应首部字段以及实体主体构成。"><a href="#响应报文基本上由协议版本，状态码（表示请求成功或失败的数字代码），用以解释状态码的原因短语，可选的响应首部字段以及实体主体构成。" class="headerlink" title="响应报文基本上由协议版本，状态码（表示请求成功或失败的数字代码），用以解释状态码的原因短语，可选的响应首部字段以及实体主体构成。"></a>响应报文基本上由协议版本，状态码（表示请求成功或失败的数字代码），用以解释状态码的原因短语，可选的响应首部字段以及实体主体构成。</h4><h4 id="HTTP是不保存状态的协议，即无状态协议。也就是说在HTTP这个级别，协议对于发送过的请求或响应都不做持久化处理。"><a href="#HTTP是不保存状态的协议，即无状态协议。也就是说在HTTP这个级别，协议对于发送过的请求或响应都不做持久化处理。" class="headerlink" title="HTTP是不保存状态的协议，即无状态协议。也就是说在HTTP这个级别，协议对于发送过的请求或响应都不做持久化处理。"></a>HTTP是不保存状态的协议，即无状态协议。也就是说在HTTP这个级别，协议对于发送过的请求或响应都不做持久化处理。</h4><h2 id="HTTP-1-1中可使用的方法"><a href="#HTTP-1-1中可使用的方法" class="headerlink" title="HTTP/1.1中可使用的方法"></a>HTTP/1.1中可使用的方法</h2><h3 id="GET：获取资源-（获取信息）"><a href="#GET：获取资源-（获取信息）" class="headerlink" title="GET：获取资源  （获取信息）"></a>GET：获取资源  （获取信息）</h3><h4 id="GET方法用来请求访问已被URI识别的资源。指定的资源经服务器端解析后返回响应内容。也就是说如果请求的资源是文本，则保持原样返回；而如果是像CGI那样的程序则返回执行后的输出结果。"><a href="#GET方法用来请求访问已被URI识别的资源。指定的资源经服务器端解析后返回响应内容。也就是说如果请求的资源是文本，则保持原样返回；而如果是像CGI那样的程序则返回执行后的输出结果。" class="headerlink" title="GET方法用来请求访问已被URI识别的资源。指定的资源经服务器端解析后返回响应内容。也就是说如果请求的资源是文本，则保持原样返回；而如果是像CGI那样的程序则返回执行后的输出结果。"></a>GET方法用来请求访问已被URI识别的资源。指定的资源经服务器端解析后返回响应内容。也就是说如果请求的资源是文本，则保持原样返回；而如果是像CGI那样的程序则返回执行后的输出结果。</h4><h3 id="POST：传输实体主体-（发送信息）"><a href="#POST：传输实体主体-（发送信息）" class="headerlink" title="POST：传输实体主体  （发送信息）"></a>POST：传输实体主体  （发送信息）</h3><h4 id="POST方法用来传输实体的主体。虽然GET方法也能传输实体的主体，但一般不用GET方法进行传输，而是用POST方法。虽说POST的功能与GET很相似，但POST的主要目的并不是获取响应的主题内容。"><a href="#POST方法用来传输实体的主体。虽然GET方法也能传输实体的主体，但一般不用GET方法进行传输，而是用POST方法。虽说POST的功能与GET很相似，但POST的主要目的并不是获取响应的主题内容。" class="headerlink" title="POST方法用来传输实体的主体。虽然GET方法也能传输实体的主体，但一般不用GET方法进行传输，而是用POST方法。虽说POST的功能与GET很相似，但POST的主要目的并不是获取响应的主题内容。"></a>POST方法用来传输实体的主体。虽然GET方法也能传输实体的主体，但一般不用GET方法进行传输，而是用POST方法。虽说POST的功能与GET很相似，但POST的主要目的并不是获取响应的主题内容。</h4><h3 id="PUT：传输文件-（发送存储文件）"><a href="#PUT：传输文件-（发送存储文件）" class="headerlink" title="PUT：传输文件      （发送存储文件）"></a>PUT：传输文件      （发送存储文件）</h3><h4 id="PUT方法要求在请求报文的主体中包含文件内容，然后保存到请求URI指定的位置。"><a href="#PUT方法要求在请求报文的主体中包含文件内容，然后保存到请求URI指定的位置。" class="headerlink" title="PUT方法要求在请求报文的主体中包含文件内容，然后保存到请求URI指定的位置。"></a>PUT方法要求在请求报文的主体中包含文件内容，然后保存到请求URI指定的位置。</h4>
                 
             </div>
             <hr/>
@@ -488,7 +489,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiaochen523.github.io/2021/02/04/%E5%8D%9A%E5%AE%A2%E6%96%B0%E7%AF%87/">http://xiaochen523.github.io/2021/02/04/%E5%8D%9A%E5%AE%A2%E6%96%B0%E7%AF%87/</a>
+                    <a href="http://xiaochen523.github.io/2021/04/14/%E5%9B%BE%E8%A7%A3HTTP/">http://xiaochen523.github.io/2021/04/14/%E5%9B%BE%E8%A7%A3HTTP/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -693,9 +694,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/14/%E5%9B%BE%E8%A7%A3HTTP/">
                     <div class="card-image">
@@ -713,9 +715,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -724,6 +726,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -734,13 +737,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/04/%E9%87%8D%E5%BB%BAblog%E7%AB%A3%E5%B7%A5/">
+                <a href="/2021/02/04/%E5%8D%9A%E5%AE%A2%E6%96%B0%E7%AF%87/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="重建blog">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="博客新篇">
                         
-                        <span class="card-title">重建blog</span>
+                        <span class="card-title">博客新篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
